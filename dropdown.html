@@ -1,0 +1,21 @@
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-label-placement>
+	<span ng-if='nothingClicked'>Select Driver to Pair</span>
+	<span ng-if='!nothingClicked'>{{data}}</span>
+  	<span class="caret" style='margin-left:10px;'></span>
+  </button>
+  <ul class="dropdown-menu" ng-model='driverselected'>
+	<li>
+	<div class="input-group" style='margin-top:10px;margin-bottom:10px;'>
+	<input class='form-control' type='text' placeholder='search driver' ng-model='searchText'>
+	</div>	 
+	</li>
+	<li ng-repeat='name in driverNames | filter:searchText' ng-click='clickMenu(name)'>
+	<a href="#" uib-tooltip-template="'popover.html'">
+		<span ng-if='name.driverName == ""'>-</span>
+		{{name.driverName}}/{{name.numberPlate}}
+		<span ng-if='name.numberPlate == ""'>-</span>
+	</a>
+	</li>
+ 
+ </div>

@@ -1,0 +1,13 @@
+<div>
+	<div ng-if='name.driverName != ""'>
+	<p>DRIVER</p>
+	<img ng-src='images/{{name.driverImage}}' height='50' width='50'>
+	<span>{{name.driverName}}</span>
+	</div>
+	
+	<div ng-if='name.numberPlate != ""'>
+	<p>VEHICLE</p>
+	<img ng-src='images/{{name.carImage}}' height='50' width='50'>
+	<span>{{name.numberPlate}}</span>	
+	</div>
+</div>

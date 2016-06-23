@@ -1,0 +1,31 @@
+.btn-default{
+	border-radius: 0;
+}
+.dropdown-menu{
+	border-radius: 0;
+	background-color:  #cce7f8 !important;
+	height: 200px;
+	overflow: scroll;
+    	overflow-x: hidden;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    
+	color: #FFFFFF !important;
+	background-color:  #1f4f6d !important;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default,.open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {    
+    background-color: #cce7f8;
+    border-color:  #8da7b8;
+}
+.form-control{
+	background-color:   #eaf2f8;
+	border: 0px;
+}
+.tooltip.top .tooltip-inner {
+    background-color:#1f4f6d;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #1f4f6d;
+}
